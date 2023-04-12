@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <include
+            android:id="@+id/head"
+            layout="@layout/layout_header" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/head">
+
+            <LinearLayout
+                android:id="@+id/lnr_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RLTopLayout"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/LLOpenInstagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rectangle_white"
+                    android:padding="30dp">
+
+                    <ImageView
+                        android:id="@+id/IMIcon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_tr" />
+
+                    <TextView
+                        android:id="@+id/TVTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/IMIcon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/about_us_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTagLine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TVTitle"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/tag_line"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/about_us_tag_line"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvTagLine"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tvVersion"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/about_version_txt_size"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/RLAboutContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/rectangle_white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imAboutContent"
+                        android:text="@string/about_title"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/about_above_txt_size" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RL1"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/aboutInfo"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/about_below_txt_size" />
+                </LinearLayout>
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RLAbout"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    ads:adSize="MEDIUM_RECTANGLE"
+                    ads:adUnitId="/@string/admob_banner_ad"/>
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</layout>

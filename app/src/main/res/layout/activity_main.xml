@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+            <include
+                layout="@layout/layout_header"
+                android:id="@+id/head"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/head">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/lnr_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RLTopLayout"
+                        android:orientation="vertical"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/RLTopMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/downloading_options"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/tvDOptionsTitle"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvDOptionsTitle"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <LinearLayout
+                                        android:id="@+id/LLShareChat"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/sharechat" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/share_chat_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/LLRoposo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/ic_roposo" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/roposo_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LLWhatsApp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/whatsapp_logo" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/whatsapp_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LLInsta"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/insta_logo" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/insta_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <LinearLayout
+                                        android:id="@+id/LLFB"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/fb" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/facebook_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LLTwitter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/ic_twitter" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/twitter_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LLTikTok"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/tiktok_logo" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/tiktok_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LLLikee"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/likee_logo" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/likee_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+                                    <LinearLayout
+                                        android:id="@+id/LLJosh"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/josh_logo" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/josh_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LLChingari"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/chingari" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/chingari_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LLMitron"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/mitron" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/mitron_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/LLSnackVideo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/snackvideo" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/snack_video_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+                                    <LinearLayout
+                                        android:id="@+id/LLMoj"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/moj" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/moj_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LLMX"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:src="@drawable/mxtakatak" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/mxtakatak_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/RLOtherOptions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/other_options"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/tvOOptionsTitle"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvOOptionsTitle"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <LinearLayout
+                                        android:id="@+id/LLGallery"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:tint="@color/colorPrimaryDark"
+                                                android:src="@drawable/ic_gallery" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/gallery_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/LLAbout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:tint="@color/colorPrimaryDark"
+                                                android:src="@drawable/ic_about" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/aboutus_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LLPrivacyPolicy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:tint="@color/colorPrimaryDark"
+                                                android:src="@drawable/ic_website" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/privacy_title"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LLLanguage"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:tint="@color/colorPrimaryDark"
+                                                android:src="@drawable/ic_language_black_24dp" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/change_lang"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <LinearLayout
+                                        android:id="@+id/LLShareApp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:tint="@color/colorPrimaryDark"
+                                                android:src="@drawable/ic_share" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/share_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/LLRateApp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:tint="@color/colorPrimaryDark"
+                                                android:src="@drawable/ic_rate" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/rate_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/LLMoreApp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:background="@drawable/rectangle_white"
+                                            android:backgroundTint="@color/grid_bg"
+                                            android:elevation="3dp"
+                                            android:layout_marginTop="3dp"
+                                            android:padding="5dp">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/circle"
+                                                android:backgroundTint="@color/white"
+                                                android:tint="@color/colorPrimaryDark"
+                                                android:src="@drawable/ic_more" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/more_app_name"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/home_item_txt_size" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+</layout>

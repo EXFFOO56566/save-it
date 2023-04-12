@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+            <include
+                android:id="@+id/head"
+                layout="@layout/layout_header" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tvHowTo"
+                android:layout_below="@+id/head">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/RLTopLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvOptionName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RLHeader"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="30dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/tvOptionTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvOptionName"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/paste_download_link"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/RLEdittextLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvOptionTag"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="5dp"
+                        android:elevation="3dp"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/et_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_toLeftOf="@+id/imDownload"
+                            android:background="@drawable/et_back_new"
+                            android:drawableLeft="@drawable/ic_link"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/paste_link"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/hint"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/imDownload"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/et_back_new"
+                            android:backgroundTint="@color/white"
+                            android:padding="12dp"
+                            android:src="@drawable/ic_download"
+                            android:tint="@color/colorPrimaryDark" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/RLDownloadLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RLEdittextLayout"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tvHowTo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/et_back_new"
+                            android:backgroundTint="@color/white"
+                            android:gravity="center"
+                            android:padding="15dp"
+                            android:text="@string/how_to"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvGallery"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/et_back_new"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:gravity="center"
+                            android:padding="15dp"
+                            android:text="@string/gallery_name"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LLStories"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_below="@+id/RLTopLayout">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:id="@+id/LLLoginInstagram"
+                        android:gravity="start">
+                        <TextView
+                            android:id="@+id/tvViewStories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/view_stories"
+                            android:textSize="13dp"
+                            android:textColor="@color/black"/>
+                        <Switch
+                            android:id="@+id/SwitchLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tvLoginInstagram"
+                            android:clickable="false"
+                            android:layout_marginStart="10dp"
+                            android:theme="@style/SCBSwitch"
+                            android:text="" />
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RVUserList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:nestedScrollingEnabled="false"
+                        tools:listitem="@layout/item_user_list" />
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pr_loading_bar"
+                        android:layout_marginTop="5dp"
+                        android:indeterminate="true"
+                        android:visibility="gone"
+                        android:indeterminateTint="@color/colorPrimaryDark"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RVStories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:nestedScrollingEnabled="false"
+                        tools:listitem="@layout/items_whatsapp_view" />
+
+                </LinearLayout>
+
+                <com.google.android.ads.nativetemplates.TemplateView
+                    android:id="@+id/my_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/LLStories"
+                    android:layout_marginTop="20dp"
+                    app:nt_template_type="@layout/gnt_small_template_view" />
+            </RelativeLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+</layout>

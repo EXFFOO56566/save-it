@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "95148852983",
+    "firebase_url": "https://saveit-7a7a6.firebaseio.com",
+    "project_id": "saveit-7a7a6",
+    "storage_bucket": "saveit-7a7a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95148852983:android:ffe8150c5a1b5ead29f5f2",
+        "android_client_info": {
+          "package_name": "com.smapps.saveit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95148852983-t9t8d7535jc0ug8hsetonbg4p83o5kom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMoKOd0u6dJaHyLSw77W2dXEK2j7_5UzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95148852983-t9t8d7535jc0ug8hsetonbg4p83o5kom.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
